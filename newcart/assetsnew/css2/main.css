@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(.assetsnew\pictures\MAIN.webp);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+}   
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+.logo{
+    color:rgb(245, 80, 20);
+    font-size: 50px;
+    font-family: 'Pacifico', cursive;
+
+}
+.menu{
+
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    margin-left: 40px;
+}
+ul li a{
+    text-decoration: none;
+    color: rgb(242, 235, 233);
+    font-size: 30PX;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    transition: 0.4s ease-in-out; 
+
+}
+ul li a:hover{
+    color: chocolate;
+}
+.search-container {
+    display: flex;
+    margin-left: 100px; /* Adjust the left margin as needed */
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.search-button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #45a049;
+}

@@ -1,0 +1,574 @@
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #bec5cb;
+    font-size: larger;
+}
+
+
+header {
+    background-color: #010608;
+    color: white;
+    padding: 10px 0;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #87CEFA;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 80px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 15px 20px;
+}
+
+nav ul li a:hover {
+    color: #add8e6;
+    text-decoration: underline;
+}
+
+.marquee {
+    background-color: #88121e;
+    color: white;
+    padding: 5px 0;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+
+}
+
+h1, h2 {
+    color: #1263a0;
+    text-align: center;
+    font-size: larger;
+}
+
+.categories-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.category {
+    background-color: #010b12;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    flex: 1 1 30%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.category:hover {
+    background-color: #0a2a35;
+    cursor: pointer;
+}
+
+.shop-container {
+    text-align: center;
+}
+
+.shop-button {
+    background-color: #902b2b;
+    color: white;
+    border: none;
+    padding: 10px 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.shop-button:hover {
+    background-color: #010408;
+}
+
+.reviews-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.review {
+    background-color: #2d89c2;
+    color: rgb(26, 4, 4);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.review h3 {
+    margin-top: 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-container a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-container a:hover {
+    text-decoration: underline;
+}
+
+/* Banner Styles */
+/* Existing styles */
+
+#banner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.banner-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.banner-slide {
+    min-width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease-in-out;
+}
+
+.banner-slide:hover img {
+    transform: scale(1.05);
+}
+
+.banner-text {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 2em;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    width: 80%;
+    line-height: 1.5;
+    font-family: 'Arial', sans-serif;
+}
+
+.banner-buttons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    gap: 10px;
+}
+
+.banner-button {
+    background: linear-gradient(45deg, rgba(255, 0, 13, 0.8), rgba(0, 123, 255, 0.6));
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s, transform 0.3s;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Arial', sans-serif;
+}
+
+.banner-button:hover {
+    background: linear-gradient(45deg, rgba(0, 123, 255, 1), rgba(0, 123, 255, 0.8));
+    transform: scale(1.1);
+}
+
+.banner-slide:hover .banner-buttons {
+    display: flex;
+}
+
+/* Additional Styles */
+.navbar-container {
+    background-color: #051a1b;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li a:hover {
+    color: #ccfffe;
+    text-decoration: underline;
+}
+
+.category:hover {
+    background-color: #860c20;
+    cursor: pointer;
+}
+
+/* Books section styles */
+
+#books {
+    margin-bottom: 40px;
+}
+
+.book-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.book {
+    width: 200px;
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.book:hover {
+    transform: translateY(-5px);
+}
+
+.book img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.book:hover img {
+    transform: scale(1.05);
+}
+
+.book h3 {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.book p {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.book button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.book button:hover {
+    background-color: #0056b3;
+}
+
+/* Follow Us section styles */
+
+#follow-us {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+    text-align: center;
+}
+
+#follow-us .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#follow-us h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.social-icon:hover {
+    transform: translateY(-5px);
+}
+
+/* Reviews section styles */
+
+#reviews {
+    background-color: #030e1a;
+    padding: 40px 0;
+    text-align: center;
+}
+
+#reviews .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#reviews h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #f7f1f1;
+}
+
+.review-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.review-form form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: calc(100% - 10px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+#category-select,
+#search-bar,
+#topic-search-bar {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#book-name,
+#topic-book-details {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+#search-examples h4 {
+    margin-top: 20px;
+    color: #555;
+}
+
+#search-examples ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#search-examples li {
+    margin: 5px 0;
+    font-size: 16px;
+}
+.search-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-top: 10px;
+    color: #555;
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+    width: 80%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#results {
+    margin-top: 20px;
+    text-align: left;
+    width: 100%;
+    max-width: 400px;
+}
+
+.container2 {
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Example maximum width */
+    width: 100%; /* Ensure container takes full width */
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  /* Section-specific Styles */
+  #account-section {
+    margin-top: 20px;
+  }
+  
+  #account-section .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  #account-section .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  #account-section .btn:focus {
+    outline: none;
+  }
+  
+  /* Additional Sections (if needed) */
+  #other-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    text-align: center; /* Center text within this section */
+  }
+  
+  #other-section h2 {
+    font-size: 24px;
+    color: #333;
+  }

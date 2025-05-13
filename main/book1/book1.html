@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Detail Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fff3f3;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        .book-image {
+            float: left;
+            width: 30%;
+            margin-right: 20px;
+        }
+        .book-details {
+            float: left;
+            width: 65%;
+        }
+        .book-details h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        .book-details p {
+            color: #555;
+        }
+        .clear {
+            clear: both;
+        }
+        .read-sample, .rating-reviews {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #ffe5e5;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .read-sample h3, .rating-reviews h3 {
+            margin-top: 0;
+            color: #d9534f;
+        }
+        .buttons {
+            margin: 20px 0;
+        }
+        .back-btn, .shop-now {
+            display: inline-block;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        .back-btn {
+            background-color: #d9534f;
+            color: #fff;
+        }
+        .back-btn:hover {
+            background-color: #c9302c;
+        }
+        .shop-now {
+            background-color: #d9534f;
+            color: #fff;
+        }
+        .shop-now:hover {
+            background-color: #c9302c;
+        }
+        .rating-stars {
+            color: #ffc107;
+            font-size: 20px;
+        }
+        .reviews p {
+            margin: 10px 0;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="buttons">
+            <a href="#" class="back-btn">Back</a>
+        </div>
+        <div class="book-image">
+            <img src="pics/book1.jpg" alt="Book Image" style="width:100%;">
+        </div>
+        <div class="book-details">
+            <h2>Book Title</h2>
+            <p><strong>Author:</strong> Author Name</p>
+            <p><strong>Genre:</strong> Book Genre</p>
+            <p><strong>Description:</strong> This is a detailed description of the book. It includes an overview of the storyline, characters, and key themes.</p>
+            <p><strong>Price:</strong> $XX.XX</p>
+            <a href="#" class="shop-now">Shop Now</a>
+        </div>
+        <div class="clear"></div>
+        <div class="rating-reviews">
+            <h3>Rating & Reviews</h3>
+            <div class="rating">
+                <span class="rating-stars">★★★★☆</span> <span>4.0/5</span>
+            </div>
+            <div class="reviews">
+                <p><strong>Reviewer 1:</strong> Great book! Highly recommended.</p>
+                <p><strong>Reviewer 2:</strong> Interesting read, but a bit slow in the middle.</p>
+                <p><strong>Reviewer 3:</strong> Loved it! Couldn't put it down.</p>
+            </div>
+        </div>
+        <div class="read-sample">
+            <h3>Read Sample Pages</h3>
+            <p>Here you can provide some sample text from the book to give readers a glimpse of the content. You can include a few paragraphs or a sample chapter.</p>
+        </div>
+    </div>
+</body>
+</html>
